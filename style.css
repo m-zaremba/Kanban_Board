@@ -1,0 +1,53 @@
+/* Forest Image - Photo by Staffan Kjellvestad on Unsplash */
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: url("./forest.jpg");
+  background-size: cover;
+  background-position: 50% 60%;
+  background-attachment: fixed;
+  color: white;
+  font-family: Quicksand, sans-serif;
+  overflow-y: hidden;
+}
+
+h1 {
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px black;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 3rem;
+}
+
+/* Media Query: Laptop */
+@media screen and (max-width: 1800px) {
+  .main-title {
+    font-size: 2rem;
+  }
+}
+
+/* Media Query: Large Smartphone (Vertical) */
+@media screen and (max-width: 600px) {
+  body {
+    overflow-y: auto;
+  }
+
+  .drag-container {
+    margin: 0;
+  }
+
+  .drag-list {
+    display: block;
+  }
+
+  .drag-column {
+    margin: 10px;
+  }
+}
