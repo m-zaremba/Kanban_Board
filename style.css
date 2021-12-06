@@ -160,7 +160,7 @@ ul {
   cursor: pointer;
   width: fit-content;
   border-radius: 5px;
-  transition: all 0.3s ease-in;
+  /* transition: all 0.3s ease-in; */
   user-select: none;
 }
 
