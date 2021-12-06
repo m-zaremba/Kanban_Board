@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kanban Board</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
   </head>
   <body>
     <h1 class="main-title">Kanban Board</h1>
@@ -17,7 +16,13 @@
             <h1>Backlog</h1>
           </span>
           <div id="backlog-content" class="custom-scroll">
-            <ul class="drag-item-list" id="backlog-list"></ul>
+            <ul
+              class="drag-item-list"
+              id="backlog-list"
+              ondrop="drop(event)"
+              ondragover="allowDrop(event)"
+              ondragenter="dragEnter(0)"
+            ></ul>
           </div>
           <div class="add-btn-group">
             <div class="add-btn">
@@ -38,7 +43,13 @@
             <h1>Progress</h1>
           </span>
           <div id="progress-content" class="custom-scroll">
-            <ul class="drag-item-list" id="progress-list"></ul>
+            <ul
+              class="drag-item-list"
+              id="progress-list"
+              ondrop="drop(event)"
+              ondragover="allowDrop(event)"
+              ondragenter="dragEnter(1)"
+            ></ul>
           </div>
           <div class="add-btn-group">
             <div class="add-btn">
@@ -59,7 +70,13 @@
             <h1>Complete</h1>
           </span>
           <div id="complete-content" class="custom-scroll">
-            <ul class="drag-item-list" id="complete-list"></ul>
+            <ul
+              class="drag-item-list"
+              id="complete-list"
+              ondrop="drop(event)"
+              ondragover="allowDrop(event)"
+              ondragenter="dragEnter(2)"
+            ></ul>
           </div>
           <div class="add-btn-group">
             <div class="add-btn">
@@ -80,7 +97,13 @@
             <h1>On Hold</h1>
           </span>
           <div id="on-hold-content" class="custom-scroll">
-            <ul class="drag-item-list" id="on-hold-list"></ul>
+            <ul
+              class="drag-item-list"
+              id="on-hold-list"
+              ondrop="drop(event)"
+              ondragover="allowDrop(event)"
+              ondragenter="dragEnter(3)"
+            ></ul>
           </div>
           <div class="add-btn-group">
             <div class="add-btn">
@@ -97,5 +120,6 @@
         </li>
       </ul>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
